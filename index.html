@@ -190,7 +190,7 @@
 
                 }, function ( xhr ) {
 
-                    document.getElementById("p1").innerHTML = '<br/>' + ( xhr.loaded / xhr.total * 100 ).toFixed(1) + '%';
+                    document.getElementById("p1").innerHTML = '<br/>' + ( (xhr.loaded * 100) / (50 * 1024 * 1024)  ).toFixed(1) + '%';
 
                 }, function ( error ) {
 
